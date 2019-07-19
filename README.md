@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Name of Project: Show Me The Music
 
-## Available Scripts
+Project’s Purpose or Goal: Allows users to sample(if not signed in) or fully listen to(when signed in) top tracks of music artists and create a favorite artists list. Users can then search for upcoming shows based on their favorite artists or by their zip codes/region
 
-In the project directory, you can run:
+List the absolute minimum features the project requires to meet this purpose or goal: 
+- App will utilize a music streaming API
+- If Users aren't signed in:
+    -users can search/view upcoming shows/events in their area
+        - seach for an artist and see if that artist has upcoming shows
+        - search a zip code and or city
+    -users can sample (30seconds) top/featured tracks by artists with upcoming shows
+    -users can create an account to login to
+- If Users are signed in:
+    -users can save artists to their favorites list
+    -users can listen to entire tracks of artists they've searched for, favorited, or discoverd in upcoming shows/events section
 
-### `npm start`
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React,
+Redux,
+Firebase(?),
+Napster API - for playing music,
+SongKick API - for searching upcoming shows
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+- For All Users:
+    - can refine searches to include distance within zip code or city
+    - provide a list of links to local small music venues
+- For Logged in Users:
+    - Users can request & recieve notifications for upcoming shows of artists on their favorites list
+    - Users can view reccommended artists based on their current favorites
+        - Users can ask for reccommended artists based on the artist they are currently viewing
+    - users can view listen history
+    - 
 
-### `npm test`
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Probably none...?
 
-### `npm run build`
+Is there anything else you’d like your instructor to know?
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You're awesome! *double thumbs up*
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Component diagram](/src/assets/images/SMTM.jpg)
