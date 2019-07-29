@@ -1,10 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from '../src/components/app/App';
+import { HashRouter } from 'react-router-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers/index';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(rootReducer);
+
+const render = (Component) => {
+    ReactDOM.render(
+    <HashRouter>
+        <Provider store={store}>
+            <Component/>
+        </Provider>
+    </HashRouter>, document.getElementById('root'));
+
+}
+
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
