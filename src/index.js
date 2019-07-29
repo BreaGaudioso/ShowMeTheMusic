@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from '../src/components/app/App';
+import App from '../src/components/App/App';
 import { HashRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -16,9 +16,11 @@ const render = (Component) => {
         <Provider store={store}>
             <Component/>
         </Provider>
-    </HashRouter>, document.getElementById('root'));
+    </HashRouter>, document.getElementById('root')
+    );
+};
 
-}
+render(App);
 
 
 
