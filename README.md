@@ -5,12 +5,12 @@ An app that allows users to select top artists and play their top tracks. For no
 List the absolute minimum features the project requires to meet this purpose or goal:
 Phase 1
 As a user when I go to the home page I will see a list of top artists. I will be able to toggle through different date ranges 
-Napster API get top artists: http://api.napster.com/v2.2/artists/top?apikey=NmE0ZTY0MTUtZDdkMy00MDkxLWFhN2YtMjdlZmY5MTljN2I5&range=week
-http://api.napster.com/v2.2/artists/top?apikey=NmE0ZTY0MTUtZDdkMy00MDkxLWFhN2YtMjdlZmY5MTljN2I5&range=day
-http://api.napster.com/v2.2/artists/top?apikey=NmE0ZTY0MTUtZDdkMy00MDkxLWFhN2YtMjdlZmY5MTljN2I5&range=month
+Napster API get top artists: http://api.napster.com/v2.2/artists/top?apikey={your_api_key}&range=week
+http://api.napster.com/v2.2/artists/top?apikey={your_api_key}&range=day
+http://api.napster.com/v2.2/artists/top?apikey={your_api_key}&range=month
 
 Upon clicking on an artist, a page with all of their top tracks, photos, and additional metadata will show up, with play previews next to each track.
-Napster API top tracks for an artist: http://api.napster.com/v2.2/artists/Art.28463069/tracks/top?apikey=NmE0ZTY0MTUtZDdkMy00MDkxLWFhN2YtMjdlZmY5MTljN2I5
+Napster API top tracks for an artist: http://api.napster.com/v2.2/artists/Art.28463069/tracks/top?apikey={your_api_key}
 
 Display Artist info
  - Photo
