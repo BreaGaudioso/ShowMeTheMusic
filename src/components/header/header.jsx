@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
-        <div>
+        <div className="Header">
             <h1>Show Me The Music</h1>
             <h3>Discover your next favorite artist and where to see them live!</h3>
             <hr/>
