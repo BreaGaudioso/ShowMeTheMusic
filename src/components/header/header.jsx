@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const header = () => {
+const Header = () => {
     return (
         <div>
             <h1>Show Me The Music</h1>
@@ -13,4 +13,4 @@ const header = () => {
     )
 };
 
-export default header;
+export default Header;

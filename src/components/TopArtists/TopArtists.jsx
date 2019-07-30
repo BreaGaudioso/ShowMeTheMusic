@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './TopArtists.css';
+import Artist from '../Artist/Artist';
 
-const topArtists = () => {
+const TopArtists = () => {
     return (
-        <div>
+        <div className="TopArtists">
             <h4>View Top Artists By:</h4>
-                <Link to="/dailytop">Day</Link> | <Link to="/weeklytop">Week</Link> | <Link to="/monthlytop">Month</Link>
+                <Link to="/dailytop">Today</Link> | <Link to="/weeklytop">This Week</Link> | <Link to="/monthlytop">This Month</Link>
             <h1>Today's Top Artists</h1>
+            <Artist />
         </div>
-    );
+    )
 };
 
-export default topArtists;
+export default TopArtists;
