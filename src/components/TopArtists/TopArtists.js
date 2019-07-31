@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopArtists.css';
-import Artist from '../Artist/Artist';
+import Artist from '../artist/Artist';
+import TopArtistsCalls from '../../models/TopArtistsCalls';
 
 class TopArtists extends React.Component {
     constructor(props) {
@@ -14,8 +15,10 @@ class TopArtists extends React.Component {
 
     render() {
         const topArtistsList = this.state.topArtists.map(topArtist => (
-
-    ));
+            <div>
+                
+            </div>
+        ));
 
     }
 
