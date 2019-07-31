@@ -30,7 +30,10 @@ class TopArtists extends React.Component {
     render() {
         const topArtistList = this.state.topArtists.map(artist => (
             <div>
-            <h3>{artist.name.toUpperCase()}</h3>
+              <h1>{artist.name.toUpperCase()}</h1>
+              <img src={`${artist.image}`} alt="Album Art" />
+              <h4>Bio:{artist.bio}</h4>
+              //TODO: look up how to convert string into html for bio
             </div>
         ));
 

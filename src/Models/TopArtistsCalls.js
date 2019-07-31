@@ -10,11 +10,29 @@ TopArtistsCalls.getTopArtists = function getTopArtists() {
         }
     })
     .then(result => result.json())
-    .then(data => {
-      console.log(data)
-      return data.artists;
-    })
+    .then(data => TopArtistsCalls.simplifyArtists(data.artists))
     .catch(err => Error(err, "Loading Top Artists"));
 };
+
+TopArtistsCalls.simplifyArtists = function simplifyArtists(artists) {
+  return artists.map(artist => {
+    const artDetails = {
+      name: artist.name,
+      id: artist.id,
+      topTracksApi: artist.links.topTracks.href || ''
+    };
+    //change to use lodash
+    // teach kyle about null safety when using apis so dont break code
+    if (artist.albumGroups.main) {
+      artDetails.image = `https://api.napster.com/imageserver/v2/albums/${artist.albumGroups.main[0]}/images/200x200.jpg`;
+    }
+    if (artist.bios) {
+      artDetails.bio = artist.bios[0].bio
+    }
+    return artDetails;
+  })
+};
+
+
 
 export default TopArtistsCalls;

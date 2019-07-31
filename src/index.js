@@ -8,14 +8,6 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers/index';
 import * as serviceWorker from './serviceWorker';
 
-// const dotenv = require('dotenv');
-// dotenv.config();
-// module.exports = {
-//     endpoint: process.env.API_URL,
-//     masterKey: process.env.API_KEY,
-//     port: process.env.PORT
-// };
-
 
 const store = createStore(rootReducer);
 
