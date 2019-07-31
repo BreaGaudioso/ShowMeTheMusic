@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from '../header/Header';
+import Header from '../header/Header.js';
 import { Switch, Route } from 'react-router-dom';
-import TopArtists from '../topArtists/TopArtists';
+import TopArtists from '../TopArtists/TopArtists';
 import Error404 from '../error404/Error404';
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
         <Route exact path="/" render={() => <TopArtists />} />
         <Route component={Error404} />
       </Switch>
-    </div> 
+    </div>
 
 );
 
