@@ -5,7 +5,18 @@ import { Switch, Route } from 'react-router-dom';
 import TopArtists from '../TopArtists/TopArtists';
 import Error404 from '../Error404/Error404';
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    };
+  }
+
+  render() {
+
+  }
+
   return (
     <div className="App">
       <Header/>
